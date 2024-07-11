@@ -4,17 +4,17 @@
 
 ## Tema:
 
-Aplicación conceptos de herencia y polimorfismo
+Aplicación conceptos de herencia - polimorfismo - base de datos
 
 ## Problemática
 
 Las empresas de telefonía celular pueden ofrecer los siguientes planes. Todos los planes al menos debe tener las siguientes características:
 
 ### PlanCelular
-- nombre y apellidos propietario tipo (tipo cadena)
-- pasaporte propietario (tipo cadena)
-- ciudad propietario (tipo cadena)
-- barrio del propietario
+- nombre y apellidos usuario tipo (tipo cadena)
+- DNI propietario (tipo cadena)
+- ciudad usuario (tipo cadena)
+- barrio del dueño del plan
 - marca de celular
 - modelo del celular
 - numero celular
@@ -22,17 +22,17 @@ Las empresas de telefonía celular pueden ofrecer los siguientes planes. Todos l
 
 Los planes se caracterizan además y clasifican así:
 
-### PlanPostPagoMinutosMegasEconomico
+### Plan Básico Económico
 - minutos|costo minutos|megas expresado en gigas|costo por cada gigas|porcentaje de descuento (Ejemplo: 10%)
 
-### PlanPostPagoMinutos:
-- minutos nacionales|costo minuto nacional|minutos internacionales|costo minuto internacional
+### Plan Plus
+- minutos nacionales|costo minuto nacional|minutos internacionales|costo minuto internacional | minutos locales | costos minutos locales
 
-### PlanPostPagoMegas
-- megas expresado en gigas|costo por cada giga|tarifa base
+### Plan Plus Max
+- megas expresado en gigas|costo por cada giga|tarifa base | tarifa redes sociales
 
-### PlanPostPagoMinutosMegas
-- minutos|costo minutos|megas expresado en gigas|costo por cada giga
+### Plan Ideal
+- minutos|costo minutos|megas expresado en gigas|costo por cada gigas|costo tarifa base youtube
 
 
 
@@ -48,11 +48,11 @@ En una clase Inicio usted debe:
 
 ## Recomendaciones:
 
-- Analizar la problemática; realizar el diagrama (carpeta diagramas); crear la solución en Java (carpeta lenguaje-programacion)
+- Analizar la problemática; realizar el diagrama (carpeta diagramas - solo de las clases involucradas en el **Polimorfismo**); crear la solución en Java (carpeta lenguaje-programacion)
 
 ## Proceso a seguir:
 
-- En el método (main) de la clase a Ejecutar. En un ciclo repetitivo el usuario puede decidir que tipo de Plan desea crear para la empresa de acuerdo a las opciones: PlanPostPagoMinutos, PlanPostPagoMegas, PlanPostPagoMinutosMegas, PlanPostPagoMinutosMegasEconomico.
+- En el método (main) de la clase a Ejecutar. En un ciclo repetitivo el usuario puede decidir que tipo de Plan desea crear para la empresa de acuerdo a las opciones: Plan Básico Económico, Plan Plus, Plan Plus Max, Plan Ideal.
 - De acuerdo a la opción, el usuario ingresa por teclado los datos necesarios para crear el objeto.
 - Luego de crear el objeto; se debe guardar en la base datos
 - Finalizado el ciclo (cuando lo decida el usuario); se debe presentar todos los objetos guardados en la base de datos.
